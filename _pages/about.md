@@ -2,5 +2,7 @@
 layout: archive
 title: "About"
 permalink: /about/
-author_profile: true
+author_profile: false
 ---
+
+Hey! Learn about us!

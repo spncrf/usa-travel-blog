@@ -5,7 +5,8 @@
 $(document).ready(function() {
   // FitVids init
   $("#main").fitVids();
-
+  var travelMapWidth = 636;   // will be the value that the original provided coords are mapped to
+  var travelMapHeight = 398;
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
@@ -21,10 +22,48 @@ $(document).ready(function() {
     }
   };
 
+  var adjustTravelMap = function () {
+    const updatedHeight = $("#usa_img").height();
+    const updatedWidth = $("#usa_img").width();
+    var shapes = $('#usa_mapping > area');
+    const heightChange = updatedHeight / travelMapHeight;
+    const widthChange = updatedWidth / travelMapWidth;
+    for (let i = 0; i < shapes.length; i++) {
+      const typeOfShape = shapes[i].getAttribute('shape');
+      if (typeOfShape == 'poly' || typeOfShape == 'rect') {
+        const existingCoords = shapes[i].getAttribute('coords').split(',').map(Number);
+        console.log(existingCoords)
+        const updatedCoords = [];
+        for (let j = 0; j < existingCoords.length; j++) {
+          var updatedCoord;
+          if (j % 2 === 0) {  // x coordinate
+            updatedCoord = existingCoords[j] * widthChange
+          }
+          else {    // y coordinate
+            updatedCoord = existingCoords[j] * heightChange
+          }
+          updatedCoords.push(Number.parseFloat(updatedCoord).toFixed(4));
+        }
+        console.log(updatedCoords);
+        const stringifiedNewCoords = updatedCoords.join(',');
+        shapes[i].setAttribute('coords', stringifiedNewCoords);
+      }
+    }
+    travelMapHeight = updatedHeight;
+    travelMapWidth = updatedWidth;
+  }
+
+
+
   stickySideBar();
+  adjustTravelMap();
+
 
   $(window).resize(function() {
     stickySideBar();
+    if ($("#usa_img").width() != travelMapWidth || $("#usa_img").height() != travelMapHeight) {
+      adjustTravelMap();
+    }
   });
 
   // Follow menu drop down
@@ -133,4 +172,43 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
+
+//   // Updating image map on resize
+//   window.onload = function () {
+//     var ImageMap = function (map, img) {
+//             var n,
+//                 areas = map.getElementsByTagName('area'),
+//                 len = areas.length,
+//                 coords = [],
+//                 previousWidth = 128;
+//             for (n = 0; n < len; n++) {
+//                 coords[n] = areas[n].coords.split(',');
+//             }
+//       console.log('coords')
+//       console.log(coords)
+//       this.resize = function () {
+//               console.log('resizing')
+//                 var n, m, clen,
+//           x = img.offsetWidth / previousWidth;
+//         console.log('the x value')
+//         console.log(x);
+//                 for (n = 0; n < len; n++) {
+//                     clen = coords[n].length;
+//                     for (m = 0; m < clen; m++) {
+//                         coords[n][m] *= x;
+//                     }
+//                     areas[n].coords = coords[n].join(',');
+//         }
+//         console.log('areas')
+//         console.log(areas)
+//                 previousWidth = document.body.clientWidth;
+//                 return true;
+//             };
+//             window.onresize = this.resize;
+//         },
+//         imageMap = new ImageMap(document.getElementById('usa_mapping'), document.getElementById('usa_img'));
+//    console.log(imageMap);
+//    imageMap.resize();
+//     return;
+// }
 });
