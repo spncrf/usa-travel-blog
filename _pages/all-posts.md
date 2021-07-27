@@ -2,7 +2,7 @@
 layout: archive
 title: "All Posts"
 permalink: /all-posts/
-author_profile: true
+author_profile: false
 ---
 
 {% if paginator %}
