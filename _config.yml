@@ -16,9 +16,9 @@ minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: "USA Travels"
+title: "Working From Road"
 title_separator: "/"
-subtitle: "travels, usa"
+subtitle: "A USA travel blog"
 name: "Spencer F"
 description: "A website."
 url: "https://spncrf.github.io/usa-travel-blog"
@@ -93,10 +93,10 @@ social:
 
 # Analytics
 analytics:
-  provider: false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: G-0NL40GMKFL
+    anonymize_ip: true # false (default)
 
 # Site Author
 author:
