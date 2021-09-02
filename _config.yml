@@ -20,8 +20,8 @@ title: "Working From Road"
 title_separator: "/"
 subtitle: "A USA travel blog"
 name: "Spencer F"
-description: "A website."
-url: "https://spncrf.github.io/usa-travel-blog"
+description: "A USA travel blog"
+url: "https://www.workingfromroad.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "spncrf/usa-travel-blog/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -30,7 +30,7 @@ masthead_title: # overrides the website title displayed in the masthead, use " "
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -59,16 +59,16 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: # true, false (default)
-search: true #, false (default)
+search: false #, false (default)
 search_full_content: # true, false (default)
-search_provider: algolia
+search_provider: # google
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 google:
-  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  search_engine_id: # f22ec3fba9731bcc9
   instant_search: # false (default), true
 # SEO Related
 google_site_verification:
@@ -100,10 +100,10 @@ analytics:
 
 # Site Author
 author:
-  name: "Spencer and Natalie"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Documenting our journey across the united states"
-  # location: "location"
+  name: "Natalie and Spencer"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Thanks for visiting our travel blog! We’re using this site as a way to document and share our journey across the United States."
+  location:
   email:
   links:
     - label: "Email"
