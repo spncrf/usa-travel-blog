@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 {% capture avatar %}
-![avatar](/assets/images/avatar.jpg)
+![avatar](/assets/images/site/avatar.jpg)
 {% endcapture %}
 
 <div class="">

@@ -14,3 +14,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# sidebar stay quick links
+sidebar-stays:
+  - title: "Billings, MT"
+    url: "/mt"
+    children:
+      - title: North Dakota
+        url: "/nd"
+      - title: Cody, WY
+        url: "/cd"
