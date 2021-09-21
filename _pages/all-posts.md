@@ -3,9 +3,9 @@ layout: archive
 title: "All Posts"
 permalink: /all-posts/
 author_profile: false
-sidebar:
-  title: "Monthly Stays"
-  nav: sidebar-stays
+# sidebar:
+#  title: "Monthly Stays"
+#  nav: sidebar-stays
 ---
 
 {% if paginator %}

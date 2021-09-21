@@ -18,6 +18,7 @@
 
   @include breakpoint($large) {
     float: left;
+    text-align: center;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -28,7 +29,7 @@
     }
 
     &.sticky {
-      overflow-y: auto;
+      // overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
@@ -175,7 +176,6 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
-    max-width: 207px;
   }
 }
 

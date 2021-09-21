@@ -19,6 +19,31 @@
   }
 }
 
+.image_wrapper {
+  text-align: center;
+}
+.content_wrapper {
+  @include breakpoint($large) {
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+}
+.intro_wrapper {
+  @include breakpoint($large) {
+    padding-left: 120px;
+  }
+
+  @include breakpoint($x-large) {
+    padding-left: 120px;
+  }
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;

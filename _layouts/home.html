@@ -1,21 +1,30 @@
 ---
-layout: archive
-author_profile: true
+layout: main
 ---
 
 {{ content }}
+<div class="intro_wrapper">
+  <h1>Thank you for visiting!</h1>
+  <p style="padding-left: 7px;">
+  <span style="font-weight: bold;">Working From Road</span> is two recent college graduates' attempt to document their journey across the United States - one reasonably priced Airbnb at a time.</p>
+  <p style="padding-left: 7px;">Each stay will last at least <strong>4 weeks</strong> with potential side quests to nearby locations.</p> 
+</div>
 
-<p>Click a pin from the map below</p>
-<img src="assets/images/Site/usmap.jpg" usemap="#image-map" id="usa_img" alt="travel-map" class="full">
 
-<map name="image-map" id="usa_mapping">
-  <area target="_self" alt="Test Post" title="Test Post" href="/test-post/" coords="30,30,140,140" autofocus shape="rect">
-</map>
-
-
+<div style="text-align: center; padding: 15px 0px">
+  <strong>Click a <i class="fas fa-map-marker-alt"></i> on the map below to read about our time there</strong>
+</div>
+<div class="image_wrapper">
+  <img src="assets/images/site/map.png" usemap="#image-map" id="usa_img" alt="travel-map" class="full">
+  <map name="image-map" id="usa_mapping">
+    <area target="_self" alt="Test Post" title="Test Post" href="/test-post/" coords="30,30,140,140"  shape="rect">
+  </map>
+</div>
+<div class="small-text muted" style="padding: 0px 0px 50px 0px; text-align: center;"><em>Map will be updated as new locations are visited and written about</em></div>
+<div class="content_wrapper">
 <h1>Latest Post</h1>
-
 {% assign newestPosts = site.posts | where_exp: "item", "item.hidden != true" %}
 {% for post in newestPosts limit:1 %}
   {% include archive-single.html type=entries_layout %}
 {% endfor %}
+</div>

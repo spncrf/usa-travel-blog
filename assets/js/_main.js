@@ -32,7 +32,6 @@ $(document).ready(function() {
       const typeOfShape = shapes[i].getAttribute('shape');
       if (typeOfShape == 'poly' || typeOfShape == 'rect') {
         const existingCoords = shapes[i].getAttribute('coords').split(',').map(Number);
-        console.log(existingCoords)
         const updatedCoords = [];
         for (let j = 0; j < existingCoords.length; j++) {
           var updatedCoord;
@@ -44,7 +43,6 @@ $(document).ready(function() {
           }
           updatedCoords.push(Number.parseFloat(updatedCoord).toFixed(4));
         }
-        console.log(updatedCoords);
         const stringifiedNewCoords = updatedCoords.join(',');
         shapes[i].setAttribute('coords', stringifiedNewCoords);
       }
@@ -172,43 +170,4 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
-
-//   // Updating image map on resize
-//   window.onload = function () {
-//     var ImageMap = function (map, img) {
-//             var n,
-//                 areas = map.getElementsByTagName('area'),
-//                 len = areas.length,
-//                 coords = [],
-//                 previousWidth = 128;
-//             for (n = 0; n < len; n++) {
-//                 coords[n] = areas[n].coords.split(',');
-//             }
-//       console.log('coords')
-//       console.log(coords)
-//       this.resize = function () {
-//               console.log('resizing')
-//                 var n, m, clen,
-//           x = img.offsetWidth / previousWidth;
-//         console.log('the x value')
-//         console.log(x);
-//                 for (n = 0; n < len; n++) {
-//                     clen = coords[n].length;
-//                     for (m = 0; m < clen; m++) {
-//                         coords[n][m] *= x;
-//                     }
-//                     areas[n].coords = coords[n].join(',');
-//         }
-//         console.log('areas')
-//         console.log(areas)
-//                 previousWidth = document.body.clientWidth;
-//                 return true;
-//             };
-//             window.onresize = this.resize;
-//         },
-//         imageMap = new ImageMap(document.getElementById('usa_mapping'), document.getElementById('usa_img'));
-//    console.log(imageMap);
-//    imageMap.resize();
-//     return;
-// }
 });
