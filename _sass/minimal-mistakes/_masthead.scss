@@ -40,11 +40,30 @@
 }
 
 .site-logo img {
-  max-height: 3rem;
+  max-height: 2rem;
+
+  @include breakpoint($xx-small) {
+    max-height: 2.5rem;
+  }
+
+  @include breakpoint($x-small) {
+    max-height: 3rem;
+  }
 }
 
 .site-title-text {
-  font-size: $type-size-2;
+  font-size: $type-size-6;
+  color: blue;
+
+  @include breakpoint($xx-small) {
+    font-size: $type-size-3;
+    color: gray;
+  }
+
+  @include breakpoint($x-small) {
+    font-size: $type-size-2;
+    color: black;
+  }
 }
 
 .site-title {

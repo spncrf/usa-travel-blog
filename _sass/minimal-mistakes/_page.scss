@@ -44,6 +44,15 @@
   }
 }
 
+.map_instructions {
+  text-align: center;
+  padding: 15px 0px;
+  font-weight: bold;
+  @media (max-width: $small) {
+    font-size: $type-size-6;
+  }
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,17 +70,24 @@ body {
 }
 
 .page {
+  width: calc(100% - #{$right-sidebar-width-min});
+  padding: 0px $right-sidebar-width-min;
+
+  @include breakpoint($small) {
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-x-narrow});
+    padding: 0px $right-sidebar-width-x-narrow 0px 0px;
+  }
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding: 0px $right-sidebar-width-narrow 0px 0px;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
     border-left: solid 4px $border-color;
-    padding-left: 50px;
+    padding: 0px $right-sidebar-width 0px 50px;
   }
 
   .page__inner-wrap {

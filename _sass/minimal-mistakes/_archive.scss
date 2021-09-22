@@ -6,6 +6,12 @@
   margin-top: 1em;
   margin-bottom: 2em;
 
+  @include breakpoint($small) {
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-x-narrow});
+    padding-right: $right-sidebar-width-x-narrow;
+  }
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});

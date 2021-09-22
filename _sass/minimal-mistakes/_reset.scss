@@ -10,7 +10,11 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 16px;
+  font-size: 14px;
+
+  @include breakpoint($small) {
+    font-size: 16px;
+  }
 
   @include breakpoint($medium) {
     font-size: 18px;
@@ -28,7 +32,11 @@ html {
   -ms-text-size-adjust: 100%;
 
   .small-text {
-    font-size: 10px;
+    font-size: 8px;
+
+    @include breakpoint($small) {
+      font-size: 10px;
+    }
 
     @include breakpoint($medium) {
       font-size: 12px;

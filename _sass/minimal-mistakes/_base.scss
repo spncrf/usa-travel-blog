@@ -35,23 +35,38 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $h-size-1;
+  font-size: $h-size-2;
+  @include breakpoint($x-small) {
+    font-size: $h-size-1;
+  }
 }
 
 h2 {
-  font-size: $h-size-2;
+  font-size: $h-size-3;
+  @include breakpoint($x-small) {
+    font-size: $h-size-2;
+  }
 }
 
 h3 {
-  font-size: $h-size-3;
+  font-size: $h-size-4;
+  @include breakpoint($x-small) {
+    font-size: $h-size-3;
+  }
 }
 
 h4 {
-  font-size: $h-size-4;
+  font-size: $h-size-5;
+  @include breakpoint($x-small) {
+    font-size: $h-size-4;
+  }
 }
 
 h5 {
-  font-size: $h-size-5;
+  font-size: $h-size-6;
+  @include breakpoint($x-small) {
+    font-size: $h-size-5;
+  }
 }
 
 h6 {
