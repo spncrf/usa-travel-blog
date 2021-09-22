@@ -32,22 +32,22 @@ html {
   -ms-text-size-adjust: 100%;
 
   .small-text {
-    font-size: 8px;
+    font-size: 10px;
 
     @include breakpoint($small) {
-      font-size: 10px;
-    }
-
-    @include breakpoint($medium) {
       font-size: 12px;
     }
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       font-size: 14px;
     }
 
-    @include breakpoint($x-large) {
+    @include breakpoint($large) {
       font-size: 16px;
+    }
+
+    @include breakpoint($x-large) {
+      font-size: 18px;
     }
   }
 }

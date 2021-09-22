@@ -5,22 +5,24 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+  width: calc(100% - #{$right-sidebar-width-min});
+  padding: 0px $right-sidebar-width-min;
 
   @include breakpoint($small) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-x-narrow});
-    padding-right: $right-sidebar-width-x-narrow;
+    padding: 0px $right-sidebar-width-x-narrow 0px 0px;
   }
 
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding: 0px $right-sidebar-width-narrow 0px 0px;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    padding: 0px $right-sidebar-width 0px 0px;
   }
 }
 

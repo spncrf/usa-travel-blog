@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: false
 ---
 
-Hey there! We are Natalie and Spencer, the couple behind Working From Road.
+Hey there! We are Natalie and Spencer, the couple behind **Working From Road**.
 
 <img src="/assets/images/Site/avatar.jpg" class="align-center" width="300px"/>
 

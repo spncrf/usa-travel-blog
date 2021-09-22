@@ -53,16 +53,13 @@
 
 .site-title-text {
   font-size: $type-size-6;
-  color: blue;
 
   @include breakpoint($xx-small) {
     font-size: $type-size-3;
-    color: gray;
   }
 
   @include breakpoint($x-small) {
-    font-size: $type-size-2;
-    color: black;
+    font-size: $type-size-1;
   }
 }
 
