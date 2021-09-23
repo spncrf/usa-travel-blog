@@ -609,3 +609,49 @@ body {
     }
   }
 }
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 460%;
+
+  @include breakpoint($xx-small) {
+    padding-top: 370%;
+  }
+
+  @include breakpoint($x-small) {
+    padding-top: 300%;
+  }
+
+  @include breakpoint($small) {
+    padding-top: 310%;
+  }
+
+  @include breakpoint($medium) {
+    padding-top: 180%;
+  }
+  @include breakpoint($medium-wide) {
+    padding-top: 135%;
+  }
+  @include breakpoint($large) {
+    padding-top: 155%;
+  }
+}
+
+.iframe-container iframe {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+#iframe-overlay {
+  height: 104px;
+  width: 100%;
+  background-color: $background-color;
+  position: relative;
+  top: -111px;
+  left: 5px;
+}
