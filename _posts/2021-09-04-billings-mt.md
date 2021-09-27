@@ -2,6 +2,7 @@
 read_time: true
 title: "Billings, MT"
 author_profile: true
+excerpt: "The first stop in the journey!"
 header:
   overlay_image: /assets/images/Billings/billingsoverlookspencer.jpg
   overlay_filter: 0.5
