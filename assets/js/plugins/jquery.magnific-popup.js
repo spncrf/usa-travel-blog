@@ -154,7 +154,6 @@
      * @param  data [description]
      */
     open: function(data) {
-
       var i;
 
       if(data.isObj === false) {
@@ -348,6 +347,7 @@
       mfp.updateItemHTML();
 
       _mfpTrigger('BuildControls');
+      // end delete
 
       // remove scrollbar, add margin e.t.c
       $('html').css(windowStyles);
@@ -630,7 +630,11 @@
         }
       }
     },
-    _openClick: function(e, el, options) {
+    _openClick: function (e, el, options) {
+      const collection = $(e.currentTarget).attr('collection');
+      // limiting the scroll to only affect links within their collection
+      el = $(el).filter(function () { return $(this).attr('collection') == collection });
+      options.items = el;
       var midClick = options.midClick !== undefined ? options.midClick : $.magnificPopup.defaults.midClick;
 
 
@@ -908,9 +912,7 @@
 
   $.fn.magnificPopup = function(options) {
     _checkInstance();
-
     var jqEl = $(this);
-
     // We call some API method of first param is a string
     if (typeof options === "string" ) {
 
@@ -918,7 +920,6 @@
         var items,
           itemOpts = _isJQ ? jqEl.data('magnificPopup') : jqEl[0].magnificPopup,
           index = parseInt(arguments[1], 10) || 0;
-
         if(itemOpts.items) {
           items = itemOpts.items[index];
         } else {
@@ -930,7 +931,7 @@
         }
         mfp._openClick({mfpEl:items}, jqEl, itemOpts);
       } else {
-        if(mfp.isOpen)
+        if (mfp.isOpen)
           mfp[options].apply(mfp, Array.prototype.slice.call(arguments, 1));
       }
 
@@ -1133,12 +1134,12 @@
             '<div class="mfp-close"></div>'+
             '<figure>'+
               '<div class="mfp-img"></div>'+
-              '<figcaption>'+
+                '<figcaption>'+ 
                 '<div class="mfp-bottom-bar">'+
                   '<div class="mfp-title"></div>'+
                   '<div class="mfp-counter"></div>'+
                 '</div>'+
-              '</figcaption>'+
+              '</figcaption>'+ 
             '</figure>'+
           '</div>',
       cursor: 'mfp-zoom-out-cur',
@@ -1674,7 +1675,7 @@
       enabled: false,
       arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
       preload: [0,2],
-      navigateByImgClick: true,
+      navigateByImgClick: false,
       arrows: true,
 
       tPrev: 'Previous (Left arrow key)',
@@ -1696,7 +1697,7 @@
 
         _mfpOn(OPEN_EVENT+ns, function() {
 
-          if(gSt.navigateByImgClick) {
+          if (gSt.navigateByImgClick) {
             mfp.wrap.on('click'+ns, '.mfp-img', function() {
               if(mfp.items.length > 1) {
                 mfp.next();

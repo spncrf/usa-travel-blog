@@ -125,7 +125,6 @@ blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-style: italic;
   border-left: 0.25em solid $primary-color;
 
   cite {
@@ -135,6 +134,12 @@ blockquote {
       content: "\2014";
       padding-right: 5px;
     }
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
   }
 }
 
@@ -228,7 +233,7 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 2em 1em;
 
   img,
   iframe,
@@ -245,12 +250,26 @@ figure {
 
   > a {
     display: block;
+    margin-top: auto;
+    margin-bottom: auto
   }
-
+  &.one {
+    justify-content: center;
+    > a,
+    > img {
+      @include breakpoint($xx-small) {
+        width: calc(90% - 0.5em)
+      }
+    }
+    figcaption {
+      width: 100%;
+    }
+  }
+  
   &.half {
     > a,
     > img {
-      @include breakpoint($small) {
+      @include breakpoint($xx-small) {
         width: calc(50% - 0.5em);
       }
     }
@@ -263,7 +282,7 @@ figure {
   &.third {
     > a,
     > img {
-      @include breakpoint($small) {
+      @include breakpoint($xx-small) {
         width: calc(33.3333% - 0.5em);
       }
     }

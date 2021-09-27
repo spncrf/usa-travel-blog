@@ -7,7 +7,7 @@ author_profile: false
 
 Hey there! We are Natalie and Spencer, the couple behind **Working From Road**.
 
-<img src="/assets/images/Site/avatar.jpg" class="align-center" width="300px"/>
+<img src="/assets/images/Site/avatar.jpg" class="align-center post-img" width="300px"/>
 
 We met as students at The University of Alabama in 2018. After living our entire lives in our home states - Spencer in Idaho and Natalie in Wisconsin - spending four years in the south was a change of pace. Experiencing a new culture and making friends from all over the country encouraged us to continue exploring new places after earning our degrees.
 

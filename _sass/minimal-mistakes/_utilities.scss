@@ -182,9 +182,45 @@ body:hover .visually-hidden button {
   font-style: italic;
 }
 
-img.align-center {
-  padding: 7px;
-  border: 2px solid $border-color;
+.post-img {
+  vertical-align: middle;
+  padding: 3px;
+  border: 1px solid $border-color;
+  width: 100%;
+  height: auto;
+
+  @include breakpoint($xx-small) {
+    padding: 4px;
+    border: 2px solid $border-color
+  }
+
+  @include breakpoint($small) {
+    padding: 7px;
+  }
+  // padding-bottom: 133%;
+  // height: 200px;
+  // @include breakpoint($xx-small) {
+  //   min-height: calc(100% - 10px) //190px
+  // }
+  // @include breakpoint($x-small) {
+  //   min-height: 270px
+  // }
+  // @include breakpoint($small) {
+  //   min-height: 215px
+  // }
+  // @include breakpoint($medium) {
+  //   min-height: 340px
+  // }
+  // @include breakpoint($medium-wide) {
+  //   min-height: 429px;
+  // }
+  // @include breakpoint($large) {
+  //   min-height: 410px;
+  // }
+  // @include breakpoint($x-large) {
+  //   min-height: calc(150vh - 100px) //190px
+  //  // min-height: 370px;
+  // }
 }
 
 /* file page content container */

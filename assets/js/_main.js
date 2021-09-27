@@ -23,32 +23,40 @@ $(document).ready(function() {
   };
 
   var adjustTravelMap = function () {
-    const updatedHeight = $("#usa_img").height();
-    const updatedWidth = $("#usa_img").width();
-    var shapes = $('#usa_mapping > area');
-    const heightChange = updatedHeight / travelMapHeight;
-    const widthChange = updatedWidth / travelMapWidth;
-    for (let i = 0; i < shapes.length; i++) {
-      const typeOfShape = shapes[i].getAttribute('shape');
-      if (typeOfShape == 'poly' || typeOfShape == 'rect') {
-        const existingCoords = shapes[i].getAttribute('coords').split(',').map(Number);
-        const updatedCoords = [];
-        for (let j = 0; j < existingCoords.length; j++) {
-          var updatedCoord;
-          if (j % 2 === 0) {  // x coordinate
-            updatedCoord = existingCoords[j] * widthChange
-          }
-          else {    // y coordinate
-            updatedCoord = existingCoords[j] * heightChange
-          }
-          updatedCoords.push(Number.parseFloat(updatedCoord).toFixed(4));
-        }
-        const stringifiedNewCoords = updatedCoords.join(',');
-        shapes[i].setAttribute('coords', stringifiedNewCoords);
+    let updatedHeight = $("#usa_img").height();
+    let updatedWidth = $("#usa_img").width();
+    if ((updatedHeight != 0 || updatedWidth != 0) && updatedWidth != undefined && updatedHeight != undefined) {
+      var shapes = $('#usa_mapping > area');
+      if (updatedHeight == 0) {
+        updatedHeight = updatedWidth * 0.62555
       }
+      if (updatedWidth == 0) {
+        updatedWidth = updatedHeight * 1.59857904085
+      }
+      const heightChange = updatedHeight / travelMapHeight;
+      const widthChange = updatedWidth / travelMapWidth;
+      for (let i = 0; i < shapes.length; i++) {
+        const typeOfShape = shapes[i].getAttribute('shape');
+        if (typeOfShape == 'poly' || typeOfShape == 'rect') {
+          const existingCoords = shapes[i].getAttribute('coords').split(',').map(Number);
+          const updatedCoords = [];
+          for (let j = 0; j < existingCoords.length; j++) {
+            var updatedCoord;
+            if (j % 2 === 0) {  // x coordinate
+              updatedCoord = existingCoords[j] * widthChange
+            }
+            else {    // y coordinate
+              updatedCoord = existingCoords[j] * heightChange
+            }
+            updatedCoords.push(Number.parseFloat(updatedCoord).toFixed(4));
+          }
+          const stringifiedNewCoords = updatedCoords.join(',');
+          shapes[i].setAttribute('coords', stringifiedNewCoords);
+        }
+      }
+      travelMapHeight = updatedHeight;
+      travelMapWidth = updatedWidth;
     }
-    travelMapHeight = updatedHeight;
-    travelMapWidth = updatedWidth;
   }
 
 
@@ -63,6 +71,12 @@ $(document).ready(function() {
       adjustTravelMap();
     }
   });
+
+  $("#usa_img").resize(function () {
+    if ($("#usa_img").width() != travelMapWidth || $("#usa_img").height() != travelMapHeight) {
+      adjustTravelMap();
+    }
+  })
 
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
@@ -132,7 +146,7 @@ $(document).ready(function() {
     //   return true;
     // },
     type: "image",
-    tLoading: "Loading image #%curr%...",
+    tLoading: "Loading image...",
     gallery: {
       enabled: true,
       navigateByImgClick: true,
