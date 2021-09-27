@@ -2,6 +2,9 @@
 read_time: true
 title: "Billings, MT"
 author_profile: true
+header:
+  overlay_image: /assets/images/Billings/billingsoverlookspencer.jpg
+  overlay_filter: 0.5
 airbnb:
   - url: /assets/images/Billings/airbnbexterior.jpg
     image_path: /assets/images/Billings/airbnbexterior.jpg
@@ -11,6 +14,9 @@ airbnb:
     image_path: /assets/images/Billings/airbnblivingroom.jpg
     alt: "Living Room"
     title: "Living Room"
+  - url: /assets/images/Billings/airbnbstairs.jpg
+    image_path: /assets/images/Billings/airbnbstairs.jpg
+    title: "Stairs"
   - url: /assets/images/Billings/airbnbkitchen.jpg
     image_path: /assets/images/Billings/airbnbkitchen.jpg
     alt: "Kitchen"
@@ -32,7 +38,7 @@ airbnb:
 After more than nine hours driving through Idaho, a bit of Wyoming, and much of Montana, we rounded a hill and there in the distance we could see it - Billings! We remarked at how unexpectedly impressive the downtown looked from afar. It was pitch black out and the looming skyscrapers and complexes were lit so bright--it honestly looked like something straight out of Willy Wonka. However, the factory-esque look started to make more sense as we drove a little closer - much too close for how much time we had left on our GPS. It was at that point we realized that what we were actually seeing was a large oil refinery in Laurel, Montana, just 20 minutes away from our Airbnb. 
 
 <figure class="one">
-    <a href="/assets/images/Billings/laurel.jpg" collection="laurel"><img src="/assets/images/Billings/laurel.jpg" alt="Laurel from a distance" class="post-img"></a>
+    <a href="/assets/images/Billings/laurelrefinery.jpg" collection="laurel"><img src="/assets/images/Billings/laurelrefinery.jpg" alt="Laurel from a distance" class="post-img"></a>
     <figcaption class="fig-caption">Pretty impressive looking refinery though!</figcaption>
 </figure> 
 
@@ -60,7 +66,7 @@ The neighborhood runs next to a sprawling park called Pioneer Park which has sev
 On the other side of the neighborhood was a cute cafe-slash-bakery called Harper & Madison, apparently named after the owner's daughters. We enjoyed a delicious breakfast there one morning and it was a good thing we did as they decided to close for good one of the last weekends we were in Billings. 🙁
 
 <figure class="one">
-<a href="/assets/images/Billings/harpermadison.jpg" collection="harper"><img src="/assets/images/Billings/harpermadison.jpg/" alt="Breakfast burrito" class="post-img"></a>
+<a href="/assets/images/Billings/harpermadison.jpg" collection="harper"><img src="/assets/images/Billings/harpermadison.jpg" alt="Breakfast" class="post-img"></a>
 <figcaption class="fig-caption">Delicious breakfast!</figcaption>
 </figure>
 
@@ -126,8 +132,8 @@ One of the many monikers for Billings is “Montana’s Trailhead”. While not 
 For a short trip, we headed out to Pictographic State Park just outside of the city. It served to preserve an area that has had cave drawings over several generations of human history. Though the pictographs themselves had definitely faded over time through weather or human intervention, it was still fascinating to read about.
 
 <figure class="one">
-    <a href="/assets/images/Billings/pictographcaves.jpg" collection="cave">
-        <img src="/assets/images/Billings/pictographcaves.jpg" alt="Pictograph Caves" class="post-img">
+    <a href="/assets/images/Billings/pictographcave.jpg" collection="cave">
+        <img src="/assets/images/Billings/pictographcave.jpg" alt="Pictograph Caves" class="post-img">
     </a>
     <figcaption class="fig-caption">Hard to see, but there are some pictographs there!</figcaption>
 </figure>
