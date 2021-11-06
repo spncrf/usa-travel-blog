@@ -115,7 +115,7 @@ We stocked up on lots of grocery essentials and fun finds before saying see you 
 
 ---
 
-The Twin Cities area is a great place for tabletop game lovers. Home to the US headquarters of two prominent board game publishers, we simply had to check them out. Luckily for us, on our third weekend, there was a small board game convention taking place near St. Paul - an offshoot of the larger [GenCon](https://www.gencon.com/) convention taking place the same weekend in Indianapolis. We got to play some brand-new board games along with some that were just new to us. We got to speak with some of the vendors and played a few convention-only games like a Cornhole/Settlers of Catan crossover (which turned out to be more fun than was expected). Since the convention lasted all weekend, we considered going back again, but all the other events kept us too busy!
+The Twin Cities area is a great place for tabletop game lovers. Home to the US headquarters of two prominent board game publishers, we simply had to check them out. Luckily for us, on our third weekend, there was a small board game convention taking place near St. Paul - an offshoot of the larger <a href="https://www.gencon.com/" target="_blank">GenCon</a> convention taking place the same weekend in Indianapolis. We got to play some brand-new board games along with some that were just new to us. We got to speak with some of the vendors and played a few convention-only games like a Cornhole/Settlers of Catan crossover (which turned out to be more fun than was expected). Since the convention lasted all weekend, we considered going back again, but all the other events kept us too busy!
 
 <figure class="half">
     <a href="/assets/images/Minnesota/gameconvention.jpg" collection="gencon">
