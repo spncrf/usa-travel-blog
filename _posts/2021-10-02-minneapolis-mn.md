@@ -193,7 +193,15 @@ Almost as well known as the Mall of America is the Minneapolis sculpture garden.
 
 Our last stop in our busy Minneapolis weekend was to the area called Dinkytown near the University of Minnesota campus. A bit older and grimier than the other places we had visited, we still wanted to get a sense of that Minneapolis could offer. We grabbed dinner from the “Hard Times Cafe” enjoying huge portion sizes of delicious vegan-ized classics. 
 
-// food pictures Natalie had the vegan Banh Mi and Spencer had the vegan Reuben. 
+<figure class="half">
+    <a href="/assets/images/Minnesota/vegan1.jpg" collection="vegan">
+        <img src="/assets/images/Minnesota/vegan1.jpg" alt="Banh Mi" class="post-img">
+    </a>
+    <a href="/assets/images/Minnesota/vegan2.jpg" collection="vegan">
+        <img src="/assets/images/Minnesota/vegan2.jpg" alt="Reuban" class="post-img">
+    </a>
+    <figcaption class="fig-caption">Natalie had the Banh Mi and Spencer had the Reuban!</figcaption>
+</figure>
 
 
 --- 
