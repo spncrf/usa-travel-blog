@@ -198,9 +198,9 @@ Our last stop in our busy Minneapolis weekend was to the area called Dinkytown n
         <img src="/assets/images/Minnesota/vegan1.jpg" alt="Banh Mi" class="post-img">
     </a>
     <a href="/assets/images/Minnesota/vegan2.jpg" collection="vegan">
-        <img src="/assets/images/Minnesota/vegan2.jpg" alt="Reuban" class="post-img">
+        <img src="/assets/images/Minnesota/vegan2.jpg" alt="Reuben" class="post-img">
     </a>
-    <figcaption class="fig-caption">Natalie had the Banh Mi and Spencer had the Reuban!</figcaption>
+    <figcaption class="fig-caption">Natalie had the Banh Mi and Spencer had the Reuben!</figcaption>
 </figure>
 
 
