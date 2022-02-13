@@ -75,7 +75,7 @@ The drive from Minneapolis to Buffalo was a long one and required us to skip a l
 </figure> 
  
  
-The Ann Arbor Airbnb had the power out for most of the night we stayed there 😬. Upon arriving to Buffalo, unloading the condiments and frozen goods we had transported from Minneapolis was the number one concern. Much to our dismay, though, a good portion of the food had to be tossed out. It’s an unglamorous reality that comes with having to move so often while maintaining as much of conventionality as possible. However, this is just one of the many adjustments we’ve had to make as we’ve gone from stay to stay! 🙂
+The Ann Arbor Airbnb had the power out for most of the night we stayed there 😬. Upon arriving to Buffalo, unloading the condiments and frozen goods we had transported from Minneapolis was the number one concern. Much to our dismay, though, a good portion of the food had to be tossed out. It’s an unglamorous reality that comes with having to move so often while maintaining as much conventionality as possible. However, this is just one of the many adjustments we’ve had to make as we’ve gone from stay to stay! 🙂
  
 ***
  
