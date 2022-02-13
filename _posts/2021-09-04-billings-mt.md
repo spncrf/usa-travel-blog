@@ -169,7 +169,7 @@ Walking back from the restaurant, we stumbled upon the town’s annual Labor Day
 
 More than one person we encountered while in Billings mentioned that they had moved away in their youth but were eventually drawn back. After immersing ourselves in Billings life, I can see why they say that. The small town feel, stunning views, and variety of activities made Billings a great month-long home we might be drawn back to as well. 
 
-*If you’d like to view the Airbnb we stayed at, you can see it here:*
+*If you’d like to view the Airbnb we stayed at, you can do so here:*
 
 > ### [Billings Airbnb](https://www.airbnb.com/rooms/41240298)
 
