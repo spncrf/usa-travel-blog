@@ -228,3 +228,7 @@ Unfortunately, it ended up being more of a corn walk than a corn maze – not of
 ---
 
 Our stay in Owatonna may have been characterized more by our visits elsewhere than our exploration of the town itself, but we enjoyed our month here. When Natalie’s mom told a friend, who had grown up in Owatonna that it was our destination for the month, his first question was “Why?”. Though it was a bit of a random choice, the Airbnb was a comfortable oasis. We enjoyed Minneapolis enough that, next time, we might just stay there instead 😊.
+
+*If you’d like to view the Airbnb we stayed at, you can do so here:*
+
+> ### [Owatonna Airbnb](https://www.airbnb.com/rooms/13125070)
